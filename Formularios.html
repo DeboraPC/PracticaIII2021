@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+    <h1>Escuela Privada Taragui</h1>
+    <div id="Rec1">
+        <fieldset class="rojo">
+        <h2>Inscripcion para rendir Examenes</h2>
+         <!-- action=""  method="" se usa mas en php -->
+        <fieldset>
+        <div id="rec2">
+        <form action="/action_page.php" target="_blank" method="">
+        <!-- input es una entrada
+        name es una forma de id -->
+        <div id="rec3">
+            <fieldset>
+            <legend>Datos Personales</legend>
+            <br> <br>
+             <label class="text" for="A">Apellido:</label>
+             <input type="text" value="" name=""  id="" placeholder="Apellido" maxlength="" required>&nbsp&nbsp&nbsp
+             <label class="text" for="name">Nombres:</label>
+             <input class="text" type="text" value="" name=""  id="" placeholder="Nombres" maxlength="" required>&nbsp&nbsp&nbsp
+            <br><br>
+            <label class="text" for="DNI">Numero de Documento:</label>
+            <input type="text" value="" name=""  id="" placeholder="DNI" maxlength="" required>&nbsp&nbsp&nbsp
+            <label class="text" for="ffechadenacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="" id="" placeholder="Ingrese su fecha de nacimiento:" required>&nbsp&nbsp&nbsp
+            <br> <br>
+        <!--  required lo que hace es mostrar un mensaje de solicitud de rellenar si no se ha dado informacion -->
+            <label class="text" for="CE">Correo Electronico:</label>
+            <input type="email" name="" id="" placeholder="Ingrese su correo: " required>&nbsp&nbsp&nbsp
+            <label class="text" for="tel">Numero de Contacto</label>
+            <input type="text" maxlength="10" required> Por ejemplo: 3794678994
+            <br>
+            </fieldset>
+        </div>
+        <br><br>
+        <fieldset>
+            <legend>Elige el Año(Curso)</legend>
+            <br>
+        <div id="rec4">
+            <select name="Curso" id="Curso1">
+                <option value="">Primero</option>
+                <option value="">Segundo</option>
+                <option value="">Tercero</option>
+                <option value="">Cuarto</option>
+                <option value="">Quinto</option>
+                <option value="">Sexto</option>
+            </select>
+        </div>
+        <br><br>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Elige la/s materia/s que vas a rendir</legend>
+            <div id="rec5">
+            <select name="materia" id="materia1" size="10" multiple>
+                <option value="Lengua y Literatura">Lengua</option>
+                <option value="Matematica">Matematica</option>
+                <option value="Historia">Historia</option>
+                <option value="">Geografia</option>
+                <option value="">Ingles</option>
+                <option value="">Educacion Fisica</option>
+                <option value="">Fisico-Quimica</option>
+                <option value="">Biologia</option>
+                <option value="">Educacion Tecnologica</option>
+                <option value="">FEC</option>
+                <option value="">Educacion Artistica</option>
+                <option value="">PFTE</option>
+                <option value="">Introduccion a la Administracion</option>
+                <option value="">TIC</option>
+                <option value="">Lenguaje Artistico</option>
+                <option value="">Sistema Contable</option>
+                <option value="">Fisica</option>
+                <option value="">Quimica</option>
+                <option value="">TGO</option>
+                <option value="">Economia</option>
+                <option value="">Derecho Comercial y Laboral</option>
+                <option value="">Gestion Financiera e Impositiva</option>
+                <option value="">Administracion de Empresas</option>
+                <option value="">Proyectos y Gestion de Emprendimientos</option>
+            </select>
+            <br><br>
+            <p>*Para Elegir varias Materias mantenga presionado el botón Ctrl</p>
+            </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Elegir Condicion</legend>
+            <br><br>
+            <div id="rec6">
+                <input type="radio" name="gender" value="Libre" id="libre">
+                <label class="text" for="previa">Previa</label>
+                <input type="radio" name="gender" value="Reg" id="reg">&nbsp&nbsp
+                <label class="text" for="Reg">Regular</label> 
+                <p>*Tene en cuenta que todas las materias seleccionadas sean en la misma condicion</p>
+            </div>
+            </fieldset>
+            <fieldset>
+                <div id="rec7">
+                    <br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios:"></textarea>
+                    <br><br>
+                    <input type="checkbox" name="Aceptar terminos" id="Aceptar terminos"required> Aceptar Clausulas de Examen
+                    <br> <br> <!-- input submit envia los datos -->
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                    <br>
+                </div>
+            </fieldset>
+        </form>
+        </fieldset>
+        </div>
+    </fieldset>
+    </div>
+</body>
+</html>
